@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Techpunch Employee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  background: #FBBC07;
+  color: white;	
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+input[type=submit],
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset] {
+  background-color: #FF0000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color: #FF6347;
+}
+#left {
+    float:left;
+    width: 80%;
+	align: center;
+}
+#right {
+    float:right;
+    width: 20%;
+}
+#bottom {
+    clear: both;
+}
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		border-radius: 8px;
+		background: url(cardback.jpeg);
+		height: 198px;
+		padding: 15px;
+	}
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(10,20,30,6);
+	}	
+	
+</style>
+</head>
+<body>
+
+<form>
+<div class="header">
+		<div id="left">
+			<h1>Techpunch Employee</h1>
+			<p>A company’s most valuable asset is its employees.</p>
+		</div>
+		<div id="right" class="card" align="center">
+			<label style="color:black"><b>Username</b></label> <br>
+			<input type="text" placeholder="Enter Username" name="uname" style="padding:8px" style="box-sizing: border-box;"> <br>
+			<label style="color:black"><b>Password</b></label> <br>
+			<input type="password" placeholder="Enter Password  " name="psw" style="padding:8px" style="display: inline-block" style="box-sizing: border-box;"> <br><br>
+			<input type="submit" value="Login" style="font-size : 17px"/>&nbsp; &nbsp; &nbsp;
+			<input type="reset" value="Cancel" style="font-size : 17px"/>
+		</div>
+	<div id="bottom"></div>
+</div>
+
+<div class="navbar">
+  <a href="Home.html" class="active" style="background-color:#FBBC07">Home</a>
+  <a href="Registration_Page.html">Register</a>
+  <a href="Contact.html">Contact Us</a>
+  <a href="About.html">About</a>
+</div>
+
+<div>
+	<img src="portal.jpg" class="center" align="left">
+	<div align="center" class="padding">
+	<br><br>
+	<h1>Where Work<br> Happens</h1>
+	<p align="center" style="font-size:22px" style="font-family:courier;">When your beam needs to kick off a project, hire a new employee, deploy some code, reviews a sales contract, finalize next year's budget, measure on A/B test,plan your next office opening, and more, Techpunch has you covered.</p>
+	<form action="Registration_Page.html">
+    <input type="submit" value="Get Register?" style="font-size : 17px"/>
+	</form><br>
+	<p>Already using Techpunch? <a href="Home.html">Sign in</a></p>
+	</div>
+</div>
+</body>
+</html>

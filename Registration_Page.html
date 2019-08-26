@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Techpunch Employee</title>
+<style>
+TD
+{
+font-family: Courier New; font-size: 15pt;
+}
+body {
+        background: url(registration.jpeg);
+		background-size: cover;
+		background-repeat: none;
+} 
+.form {
+  text-align: center;
+}
+tr.spaceUnder>td {
+  padding-top: 1em;
+}
+
+.button {
+  padding: 8px 13px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #f00;
+  border: none;
+  border-radius: 10px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+  background: url(cardback.jpeg);
+  height: 1100px;
+  width: 500px;
+  padding: 15px;
+  margin:0 auto;
+  background-size: cover;
+  background-repeat: none;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(10,20,30,6);
+}
+para
+{
+background-color: blue;
+}
+
+input[type=text], input[type=number],input[type=date],input[type=password],input[type=email],select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+<!--Navigation Bar-->
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 52.5px;
+  text-align: center;
+  background: #FF69B4;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<!-- -->
+<div class="header">
+  <h1>Techpunch Employee</h1>
+  <p>A company’s most valuable asset is its employees.</p>
+</div>
+<div class="navbar">
+  <a href="Home.html">Home</a>
+  <a href="Registration_Page.html" class="active" style="background-color:#FF69B4">Register</a>
+  <a href="Contact.html">Contact Us</a>
+  <a href="About.html">About</a>
+</div>
+<p><h1 style="color:red;"><center><i>Employment Registration Form</i></center></h1></p><br>
+<div class="card" align="center">
+<form name="loginform" method="post" action="Education.html" class="form">
+<p class="para"><h2>Personal Information</h2></p>
+<table align="center">
+<tr>
+<td><b>First Name</b></td>   
+<td><input type="text" size=25 required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Last Name</b></td>   
+<td><input type="text" size=25 required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Enter Password</b></td>   
+<td><input type="password" size=25 required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Re-Enter Password</b></td>   
+<td><input type="password" size=25 required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Mobile Number</b></td>   
+<td><input type="number" size=25 required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Email ID</b></td>   
+<td><input type="email" size=25 required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Address</b></td>   
+<td><textarea rows="6" cols="25" required></textarea></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Select Gender</b></td>   
+<td><input type="radio" size=25 name="gender" value="Male" required>Male
+<input type="radio" size=25 name="gender" value="Female">Female</td>
+</tr>
+<tr class="spaceUnder">
+<td><b>DOB</b></td>   
+<td><input type="date" required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Select Languages</b></td>   
+<td>
+<input type="checkbox"  size=25 name="language1" value="marathi" required>Marathi</span><br>
+<input type="checkbox"  size=25 name="language2" value="hindi">Hindi..<br>
+<input type="checkbox"  size=25 name="language3" value="English">English
+</td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Nationality</b></td>   
+<td><input type="text" size=25 required></td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Marrital Status</b></td>   
+<td><input type="radio" size=25 name="gender" value="Male" required>Married
+<input type="radio" size=25 name="gender" value="Female">Unarried</td>
+</tr>
+<tr class="spaceUnder">
+<td><b>Blood Group</b></td>
+<td><select id = "myList">
+  <option style="display:none">
+  <option value = "1">A+</option>
+  <option value = "2">A-</option>
+  <option value = "3">B+</option>
+  <option value = "4">B-</option>
+  <option value = "4">O+</option>
+  <option value = "4">O-</option>
+  <option value = "4">AB+</option>
+  <option value = "4">AB-</option>
+</select>
+</td>
+</tr>
+<tr class="spaceUnder">
+<td><input type="submit" class="button" style="margin-left: 52px" value="Next"></td>   
+<td><input type="reset" class="button" ></td>
+</tr>
+</table>
+</form>
+</div>
+<br><br>
+</body>
+</html>
